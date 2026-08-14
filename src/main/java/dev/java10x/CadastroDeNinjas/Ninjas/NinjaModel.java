@@ -22,6 +22,7 @@ public class NinjaModel {
     private Long id;
     private String nome;
 
+    @Column(unique = true) // Deixa coluna unica
     private String email;
 
     private int idade;
@@ -30,6 +31,5 @@ public class NinjaModel {
     @ManyToOne
     @JoinColumn(name = "missoes_id") // Foregin key ou chave estrangeira
     private MissoesModel missoes;
-
 
 }
