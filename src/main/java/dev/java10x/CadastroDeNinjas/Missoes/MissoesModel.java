@@ -24,7 +24,7 @@ public class MissoesModel {
     private String nome;
 
     @Column(name = "dificuldade")
-    private char dificuldade;
+    private String dificuldade;
 
     //OneToMany - uma missao pode ter varios ninjas
     @OneToMany(mappedBy = "missoes")
