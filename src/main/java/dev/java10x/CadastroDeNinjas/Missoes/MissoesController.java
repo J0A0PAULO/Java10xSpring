@@ -12,12 +12,12 @@ public class MissoesController {
     }
 
     //Get - mandar requisicao para pegar
-    @GetMapping("/todos")
+    @GetMapping("/listar")
     public String listarTodasMissoes() {
         return "Mostrar todas missoes";
     }
 
-    @GetMapping("/todosID")
+    @GetMapping("/listarID")
     public String listarMissaoPorID(){
         return "Mostrar missao por ID";
     }
@@ -33,5 +33,6 @@ public class MissoesController {
     public String deletarMissao() {
         return "Deletar Missao";
     }
+
 
 }
